@@ -2,7 +2,6 @@
   font-family: 'SfProDisplay';
   src: url('fonts/SFProDisplay-Regular.woff') format('woff'),
        url('fonts/SFProDisplay-Regular.woff2') format('woff2');
-  /* Specify other font properties like font-weight and font-style if desired */
 }
 
 body {
@@ -13,7 +12,7 @@ body {
   background-size: cover;
   position: relative;
   width: 1512px;
-  height: 981px; 
+  height: 981px;
 }
 
 /* Group 7 */
@@ -27,8 +26,6 @@ body {
 
 /* Group 6 */
 #heading {
-  /* POSITION IS ABSOLUTE IN FIGMA MOCKUP */
-  /* position: absolute; */
   width: 553px;
   height: 96px;
   left: 408px;
@@ -42,12 +39,10 @@ body {
   align-items: flex-end;
   letter-spacing: -0.02em;
   color: #FFFFFF;
+  padding-bottom: 36px;
 }
 
-/* We are heads down on building this product towards an early alpha launch in Q2 2023. Reserve your handle, share this page and follow us. */
 #sub-heading {
-  /* POSITION IS ABSOLUTE IN FIGMA MOCKUP */
-  /* position: absolute; */
   width: 522px;
   height: 96px;
   left: 408px;
@@ -63,32 +58,24 @@ body {
   padding-bottom: 48px;
 }
 
-.input-container {
+#name-email-container {
   position: relative;
   display: flex;
   gap: 10px;
+  padding-bottom: 12px;
 }
 
-.input-gap {
-  padding-top: 12px;
-}
-
-/* Inputs */
 .name-email {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 16px;
   width: 343px;
   height: 56px;
-  /* Background/Primary */
   background-color: #000000;
-  /* Border/Secondary */
   border: 2px solid #3D3D3D;
   border-radius: 16px;
-  /* Inside auto layout */
   flex: none;
   order: 0;
   align-self: stretch;
@@ -101,9 +88,18 @@ body {
   color: #FFFFFF;
 }
 
+.name-email:hover {
+  border: 2px solid #FFFFFF;
+}
+
+#handle-container {
+  position: relative;
+  display: flex;
+  padding-bottom: 8px;
+}
+
 #handle {
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -111,12 +107,9 @@ body {
   gap: 16px;
   width: 696px;
   height: 56px;
-  /* Background/Primary */
   background: #000000;
-  /* Text/Success */
   border: 2px solid #129A14;
   border-radius: 16px;
-  /* Inside auto layout */
   flex: none;
   order: 0;
   align-self: stretch;
@@ -129,10 +122,13 @@ body {
   color: #FFFFFF;
 }
 
+#handle:hover {
+  border: 2px solid #FFFFFF;
+}
+
 #fine-print {
   width: 696px;
   height: 40px;
-  /* Small Bold */
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -140,17 +136,15 @@ body {
   /* or 143% */
   display: flex;
   align-items: center;
-  /* Text/Primary */
   color: #FFFFFF;
-  /* Inside auto layout */
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  padding-bottom: 48px;
 }
 
-.submit-button {
-  /* Auto layout */
+#submit-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -158,20 +152,18 @@ body {
   padding: 16px;
   gap: 4px;
   font-weight: 700;
-  /* POSITION IS ABSOLUTE IN FIGMA MOCKUP */
-  /* position: absolute; */
   width: 343px;
   height: 56px;
   left: 408px;
   top: 734px;
-  /* Button/Primary */
   background: #FFFFFF;
   border-radius: 16px;
   border: none;
 }
 
-.submit-button:hover {
-  background-color: rgb(246, 255, 0);
-  border: 1px black solid;
+#submit-button:hover {
+  background-color: #129A14;
+  border: 2px black solid;
   cursor: pointer;
+  color: white;
 }

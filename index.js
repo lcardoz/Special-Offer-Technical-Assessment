@@ -1,7 +1,5 @@
 const form = document.getElementById('my-form');
 
-// BONUS: Hover states on buttons and form fields.
-
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 

@@ -1,0 +1,8 @@
+body {
+  padding: 2em;
+  background-image: url('images/Asset.png');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}

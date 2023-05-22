@@ -12,33 +12,10 @@ body {
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  position: relative;
+  width: 1512px;
+  height: 981px; 
 }
-
-.submit-button {
-  background-color: #FFFFFF;
-  /* padding: 10px 20px; */
-  border: none;
-  border-radius: 16px;
-  width: 343px;
-  height: 56px;
-}
-
-.submit-button:hover {
-  background-color: rgb(246, 255, 0);
-  /* padding: 10px 20px; */
-  border: 1px black solid;
-  cursor: pointer;
-}
-
-/* Group 10 */
-/* #group-10 {
-position: absolute;
-width: 696px;
-height: 718px;
-left: 408px;
-top: 72px;
-} */
 
 /* Group 7 */
 #group-7 {
@@ -49,8 +26,9 @@ top: 72px;
   top: 238px;
 }
 
-#heading {
-  position: absolute;
+#group-6 {
+  /* POSITION IS ABSOLUTE IN FIGMA MOCKUP */
+  /* position: absolute; */
   width: 553px;
   height: 96px;
   left: 408px;
@@ -68,7 +46,7 @@ top: 72px;
 
 /* We are heads down on building this product towards an early alpha launch in Q2 2023. Reserve your handle, share this page and follow us. */
 #sub-heading {
-  position: absolute;
+  /* position: absolute; */
   width: 522px;
   height: 96px;
   left: 408px;
@@ -85,17 +63,13 @@ top: 72px;
 
 .input-container {
   position: relative;
+  /* display: flex; */
 }
 
 .input-container label {
   position: absolute;
-  top: 50%;
+  top: 18px;
   left: 16px;
-  transform: translateY(-50%);
-  background-color: transparent;
-  pointer-events: none;
-  color: #101010;
-
   width: 311px;
   height: 20px;
   font-style: normal;
@@ -111,6 +85,20 @@ top: 72px;
   flex: none;
   order: 0;
   flex-grow: 1;
+}
+
+.outerInput {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 343px;
+  height: 56px;
+  left: 408px;
+  top: 514px;
 }
 
 /* Inputs */
@@ -158,498 +146,49 @@ top: 72px;
   flex-grow: 0;
 }
 
-/* Icon */
-
-display: none;
-width: 25px;
-height: 20px;
-
-/* Medium */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-display: flex;
-align-items: center;
-text-align: right;
-
-/* Text/Primary */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* Note */
-
-display: none;
-width: 343px;
-height: 40px;
-
-/* Small */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* or 143% */
-display: flex;
-align-items: center;
-letter-spacing: 0.02em;
-
-/* Text/Secondary */
-color: rgba(255, 255, 255, 0.5);
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-
-
-/* Input */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-position: absolute;
-width: 696px;
-height: 104px;
-left: 408px;
-bottom: 295px;
-
-
-
-/* Input */
-
-box-sizing: border-box;
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 16px;
-gap: 16px;
-
-width: 696px;
-height: 56px;
-
-/* Background/Primary */
-background: #000000;
-/* Text/Success */
-border: 2px solid #129A14;
-border-radius: 16px;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
-
-/* Label */
-
-width: 664px;
-height: 20px;
-
-/* Medium */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-display: flex;
-align-items: center;
-
-/* Text/Primary */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 1;
-
-
-/* Feedback */
-
-display: none;
-width: 20px;
-height: 20px;
-
-/* Medium */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-display: flex;
-align-items: center;
-text-align: right;
-
-/* Text/Success */
-color: #129A14;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* Note */
-
-width: 696px;
-height: 40px;
-
-/* Small Bold */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
-/* or 143% */
-display: flex;
-align-items: center;
-
-/* Text/Primary */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-
-
-/* Note */
-
-position: absolute;
-width: 96px;
-height: 20px;
-left: 408px;
-top: 72px;
-
-/* Small Bold */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
-display: flex;
-align-items: center;
-
-/* Text/Primary */
-color: #FFFFFF;
-
-
-
-/* Note */
-
-position: absolute;
-width: 96px;
-height: 20px;
-left: 1004px;
-top: 72px;
-
-/* Small Bold */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
-display: flex;
-align-items: center;
-text-align: right;
-
-/* Text/Primary */
-color: #FFFFFF;
-
-
-
-/* Input */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-position: absolute;
-width: 343px;
-height: 56px;
-left: 761px;
-bottom: 411px;
-
-
-
-/* Input */
-
-box-sizing: border-box;
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 16px;
-gap: 16px;
-
-width: 343px;
-height: 56px;
-
-/* Background/Primary */
-background: #000000;
-/* Border/Secondary */
-border: 2px solid #3D3D3D;
-border-radius: 16px;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
-
-/* Label */
-
-width: 311px;
-height: 20px;
-
-/* Medium */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-display: flex;
-align-items: center;
-
-/* Text/Primary */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 1;
-
-
-/* Icon */
-
-display: none;
-width: 25px;
-height: 20px;
-
-/* Medium */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-display: flex;
-align-items: center;
-text-align: right;
-
-/* Text/Primary */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* Note */
-
-display: none;
-width: 343px;
-height: 40px;
-
-/* Small */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* or 143% */
-display: flex;
-align-items: center;
-letter-spacing: 0.02em;
-
-/* Text/Secondary */
-color: rgba(255, 255, 255, 0.5);
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-
-
-/* Group 6 */
-#group-6 {
-position: absolute;
-width: 553px;
-height: 96px;
-left: 408px;
-top: 238px;
+#fine-print {
+  width: 696px;
+  height: 40px;
+  /* Small Bold */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  display: flex;
+  align-items: center;
+  /* Text/Primary */
+  color: #FFFFFF;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
+.submit-button {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 4px;
+  /* POSITION IS ABSOLUTE IN FIGMA MOCKUP */
+  /* position: absolute; */
+  width: 343px;
+  height: 56px;
+  left: 408px;
+  top: 734px;
+  /* Button/Primary */
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: none;
+}
 
-/* What’s next for real time conversation? */
-/* #heading { */
-position: absolute;
-width: 553px;
-height: 96px;
-right: 551px;
-top: 238px;
-
-/* X-Large */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 48px;
-/* or 100% */
-display: flex;
-align-items: flex-end;
-letter-spacing: -0.02em;
-
-color: #FFFFFF;
-/* } */
-
-
-/* Button */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 16px;
-gap: 4px;
-
-position: absolute;
-width: 343px;
-height: 56px;
-left: 408px;
-bottom: 191px;
-
-/* Button/Primary */
-background: #FFFFFF;
-border-radius: 16px;
-
-
-/* arrow-left */
-
-width: 24px;
-height: 24px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-/* 􀰌 */
-
-position: absolute;
-width: 19px;
-height: 24px;
-left: 3px;
-top: 0px;
-
-/* Icons */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-text-align: center;
-
-/* Button Text/Primary */
-color: #000000;
-
-
-
-/* Button */
-
-width: 53px;
-height: 20px;
-
-/* Medium */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-display: flex;
-align-items: center;
-text-align: justify;
-
-/* Button Text/Primary */
-color: #000000;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* arrow-right */
-
-width: 24px;
-height: 24px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
-
-/* 􀄫 */
-
-position: absolute;
-width: 19px;
-height: 24px;
-left: 3px;
-top: 0px;
-
-/* Icons */
-/* font-family: 'SF Pro Display'; */
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-text-align: center;
-
-/* Button Text/Primary */
-color: #000000;
-
+.submit-button:hover {
+  background-color: rgb(246, 255, 0);
+  border: 1px black solid;
+  cursor: pointer;
+}
 

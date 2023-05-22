@@ -1,14 +1,12 @@
 const form = document.getElementById('my-form');
 
-// Hover states on buttons and form fields is a plus.
+// BONUS: Hover states on buttons and form fields.
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
 
   document.body.style.backgroundImage = 'none';
   document.body.style.backgroundColor = 'violet';
 
   form.reset();
 });
-
-

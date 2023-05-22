@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('fonts/SFProDisplay-Regular.woff') format('woff'),
+       url('fonts/SFProDisplay-Regular.woff2') format('woff2');
+  /* Specify other font properties like font-weight and font-style if desired */
+}
+
 body {
-  padding: 2em;
+  font-family: 'CustomFont';
+  /* padding: 2em; */
   background-image: url('images/Asset.png');
   background-color: black;
   background-repeat: no-repeat;
@@ -7,114 +15,148 @@ body {
   color: white;
 }
 
+.submit-button {
+  background-color: #FFFFFF;
+  /* padding: 10px 20px; */
+  border: none;
+  border-radius: 16px;
+  width: 343px;
+  height: 56px;
+}
+
+.submit-button:hover {
+  background-color: rgb(246, 255, 0);
+  /* padding: 10px 20px; */
+  border: 1px black solid;
+  cursor: pointer;
+}
+
 /* Group 10 */
-#group-10 {
+/* #group-10 {
 position: absolute;
 width: 696px;
 height: 718px;
 left: 408px;
 top: 72px;
-}
+} */
 
 /* Group 7 */
 #group-7 {
-position: absolute;
-width: 696px;
-height: 718px;
-left: 408px;
-top: 72px;
+  position: absolute;
+  width: 696px;
+  height: 552px;
+  left: 408px;
+  top: 238px;
 }
 
+#heading {
+  position: absolute;
+  width: 553px;
+  height: 96px;
+  left: 408px;
+  top: 238px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */ 
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
 
 /* We are heads down on building this product towards an early alpha launch in Q2 2023. Reserve your handle, share this page and follow us. */
 #sub-heading {
-position: absolute;
-width: 522px;
-height: 96px;
-left: 408px;
-bottom: 515px;
-
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 100%;
-/* or 24px */
-display: flex;
-align-items: flex-end;
-
-color: #FFFFFF;
+  position: absolute;
+  width: 522px;
+  height: 96px;
+  left: 408px;
+  top: 370px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  /* or 24px */
+  display: flex;
+  align-items: flex-end;
+  color: #FFFFFF;
 }
 
+.input-container {
+  position: relative;
+}
 
-/* Input */
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  pointer-events: none;
+  color: #101010;
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 8px;
+  width: 311px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  display: flex;
+  align-items: center;
+  /* Text/Primary */
+  color: #FFFFFF;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
 
-position: absolute;
-width: 343px;
-height: 56px;
-left: 408px;
-bottom: 411px;
+/* Inputs */
+#name-email {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  width: 343px;
+  height: 56px;
+  /* Background/Primary */
+  background: #000000;
+  /* Border/Secondary */
+  border: 2px solid #3D3D3D;
+  border-radius: 16px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
 
-
-
-/* Input */
-
-box-sizing: border-box;
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 16px;
-gap: 16px;
-
-width: 343px;
-height: 56px;
-
-/* Background/Primary */
-background: #000000;
-/* Border/Secondary */
-border: 2px solid #3D3D3D;
-border-radius: 16px;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
-
-/* Label */
-
-width: 311px;
-height: 20px;
-
-/* Medium */
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-display: flex;
-align-items: center;
-
-/* Text/Primary */
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 1;
-
+#handle {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  width: 696px;
+  height: 56px;
+  /* Background/Primary */
+  background: #000000;
+  /* Text/Success */
+  border: 2px solid #129A14;
+  border-radius: 16px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
 
 /* Icon */
 
@@ -123,7 +165,7 @@ width: 25px;
 height: 20px;
 
 /* Medium */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -150,7 +192,7 @@ width: 343px;
 height: 40px;
 
 /* Small */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -221,7 +263,7 @@ width: 664px;
 height: 20px;
 
 /* Medium */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -247,7 +289,7 @@ width: 20px;
 height: 20px;
 
 /* Medium */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -273,7 +315,7 @@ width: 696px;
 height: 40px;
 
 /* Small Bold */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
@@ -302,7 +344,7 @@ left: 408px;
 top: 72px;
 
 /* Small Bold */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
@@ -325,7 +367,7 @@ left: 1004px;
 top: 72px;
 
 /* Small Bold */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
@@ -390,7 +432,7 @@ width: 311px;
 height: 20px;
 
 /* Medium */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -416,7 +458,7 @@ width: 25px;
 height: 20px;
 
 /* Medium */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -443,7 +485,7 @@ width: 343px;
 height: 40px;
 
 /* Small */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -483,7 +525,7 @@ right: 551px;
 top: 238px;
 
 /* X-Large */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 48px;
@@ -539,7 +581,7 @@ left: 3px;
 top: 0px;
 
 /* Icons */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
@@ -558,7 +600,7 @@ width: 53px;
 height: 20px;
 
 /* Medium */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -599,7 +641,7 @@ left: 3px;
 top: 0px;
 
 /* Icons */
-font-family: 'SF Pro Display';
+/* font-family: 'SF Pro Display'; */
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
